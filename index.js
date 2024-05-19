@@ -12,7 +12,7 @@ mongodb()
   .then(() => {
     app.use(
       cors({
-        origin: "http://localhost:3000",
+        origin: ["http://localhost:3000",'https://rentify-backend-nine.vercel.app']
         credentials: true,
       })
     );

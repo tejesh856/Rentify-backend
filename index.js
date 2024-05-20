@@ -12,7 +12,8 @@ mongodb()
   .then(() => {
     app.use(
       cors({
-        origin: '*'
+        origin: 'https://rentify-frontend-taupe.vercel.app',
+        credentials:true
       })
     );
     app.use(bodyParser.urlencoded({ extended: true }));
